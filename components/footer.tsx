@@ -1,5 +1,6 @@
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -59,7 +60,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-secondary-foreground/10 mt-8 pt-8 text-center">
-          <p className="text-sm">© 2023 خدمات الترجمة ترانسيا. جميع الحقوق محفوظة.</p>
+          <p className="text-sm">© 2025 خدمات الترجمة ترانسيا. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>
