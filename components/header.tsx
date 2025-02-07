@@ -1,15 +1,16 @@
 "use client"
 
-import Link from "next/link"
-import Image from "next/image"
-import { useState, useEffect } from "react"
-import { usePathname } from "next/navigation"
-import { Button } from "@/components/ui/button"
+import { AnimatePresence, motion } from "framer-motion"
+import { ChevronRight, Menu, X } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, X, ChevronRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { motion, AnimatePresence } from "framer-motion"
+import { useEffect, useState } from "react"
+
+import { Button } from "@/components/ui/button"
 import { Cart } from "@/components/cart"
+import Image from "next/image"
+import Link from "next/link"
+import { cn } from "@/lib/utils"
+import { usePathname } from "next/navigation"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -58,8 +59,8 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
-                  pathname === item.href ? "text-primary font-semibold" : "text-muted-foreground",
+                  "text-sm font-medium p-3 transition-colors hover:text-primary",
+                  pathname === item.href ? "text-primary font-bold" : "text-muted-foreground",
                 )}
               >
                 {item.name}
