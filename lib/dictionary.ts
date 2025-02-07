@@ -1,4 +1,4 @@
-import type { Locale } from "@/app/[lang]/layout"
+type Locale = 'ar' | 'en'
 
 export type Dictionary = {
   hero: {

@@ -65,8 +65,7 @@ export default function CheckoutPage() {
     // Here you would typically integrate with a payment provider
     toast({
       title: "تم إتمام الطلب بنجاح!",
-      description: "شكرًا لك على الشراء. سيتم إرسال تأكيد إلى بريدك الإلكتروني.",
-      icon: <CheckCircle className="h-5 w-5 text-green-500" />,
+      description: "شكرًا لك على الشراء. سيتم إرسال تأكيد إلى بريدك الإلكتروني."
     })
     clearCart()
     router.push("/")

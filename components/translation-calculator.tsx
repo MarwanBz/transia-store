@@ -15,7 +15,11 @@ const languagePairs = [
   { name: "العربية إلى الفرنسية", rate: 0.6 },
 ]
 
-export function TranslationCalculator() {
+interface TranslationCalculatorProps {
+  currency: string;
+}
+
+export function TranslationCalculator({ currency }: TranslationCalculatorProps) {
   const [languagePair, setLanguagePair] = useState(languagePairs[0])
   const [wordCount, setWordCount] = useState(100)
   const [totalCost, setTotalCost] = useState(languagePairs[0].rate * 100)

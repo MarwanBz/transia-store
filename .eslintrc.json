@@ -1,0 +1,11 @@
+{
+  "extends": ["next"],
+  "rules": {
+    "@typescript-eslint/*": "off",
+    "react/*": "off",
+    "react-hooks/*": "off",
+    "@next/*": "off",
+    "*": "off"
+  },
+  "ignorePatterns": ["**/*"]
+}

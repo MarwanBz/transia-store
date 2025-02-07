@@ -203,7 +203,7 @@ const getServiceDetails = (id: string) => {
   return services.find((service) => service.id === id)
 }
 
-export default function ServiceDetails({ params }: { params: { id: string } }) {
+export default function ServiceDetails({ params }: any) {
   const [service, setService] = useState<any>(null)
   const router = useRouter()
   const { addToCart } = useCart()

@@ -8,7 +8,11 @@ import { toast } from "react-toastify"
 
 const languages = ["الإنجليزية", "الإسبانية", "الفرنسية", "الألمانية", "الصينية", "اليابانية", "العربية", "الروسية"]
 
-export default function QuoteRequest() {
+interface QuoteRequestProps {
+  selectedServices: string[];
+}
+
+export default function QuoteRequest({ selectedServices }: QuoteRequestProps) {
   const [sourceLanguage, setSourceLanguage] = useState("")
   const [targetLanguage, setTargetLanguage] = useState("")
   const [wordCount, setWordCount] = useState("")

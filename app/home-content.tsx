@@ -548,7 +548,7 @@ export default function HomeContent() {
             <DialogHeader>
               <DialogTitle>حاسبة تكلفة الترجمة</DialogTitle>
             </DialogHeader>
-            <TranslationCalculator />
+            <TranslationCalculator currency="SAR" />
           </DialogContent>
         </Dialog>
       )}
